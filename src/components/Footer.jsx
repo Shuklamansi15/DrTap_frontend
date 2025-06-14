@@ -1,23 +1,27 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import dr_tap from "../assets/dr_tap.png";
+import { useNavigate } from "react-router-dom"; // ✅ Added this
 
 const Footer = () => {
+  const navigate = useNavigate(); // ✅ Hook for navigation
+
   return (
     <div className="md:mx-10">
       <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm">
         {/* left section */}
         <div>
           <img
-            onClick={() => navigate("/")}
+            onClick={() => navigate('/')}
             className="w-44 h-16 object-cover object-center cursor-pointer"
-            src="src\assets\dr_tap.png"
+            src={dr_tap}
             alt="logo"
           />
-          <p className="w-full md:w-2/3 text-gray-600 leading-6">
+          <p className="w-full md:w-2/3 text-gray-600 leading-6 mt-4">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ea
             atque nulla quos et, asperiores ad iste quis. Impedit, quia.
           </p>
         </div>
+
         {/* center section */}
         <div>
           <p className="text-xl font-medium mb-5">COMPANY</p>
@@ -28,6 +32,7 @@ const Footer = () => {
             <li>Privacy policy</li>
           </ul>
         </div>
+
         {/* right section */}
         <div>
           <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
@@ -37,11 +42,12 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
       {/* copyright text */}
       <div>
         <hr />
         <p className="py-5 text-sm text-center">
-          Copyright 2025@ DrTap - All Right Reserved.
+          Copyright 2025@ DrTap - All Rights Reserved.
         </p>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
+import dr_tap from "../assets/dr_tap.png"; 
 
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
       <img
   onClick={() => navigate('/')}
   className="w-44 h-16 object-cover object-center cursor-pointer"
-  src="src\assets\dr_tap.png"
+  src={dr_tap}
   alt="logo"
 />
 
@@ -85,7 +86,11 @@ const Navbar = () => {
           } md:hidden fixed right-0 top-0 z-20 overflow-hidden bg-white transition-all duration-300`}
         >
           <div className="flex items-center justify-between px-5 py-6">
-            <img className="w-36" src={assets.dr_tap} alt="Logo" />
+            <img
+  className="w-44 h-16 object-cover object-center cursor-pointer"
+  src={dr_tap}
+  alt="logo"
+/>
             <img
               className="w-7 cursor-pointer"
               onClick={() => setShowMenu(false)}
