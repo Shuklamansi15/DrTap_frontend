@@ -4,12 +4,12 @@ import Home from './pages/Home';
 import MyProfile from './pages/MyProfile'; 
 import MyAppointment from './pages/MyAppointment';
 import Appointment from './pages/Appointment';
-import Login from './pages/login';         
-import About from './pages/about';        
-import Contact from './pages/contact';    
-import Doctors from './pages/doctors';   
+import Login from './pages/Login';         
+import About from './pages/About';        
+import Contact from './pages/Contact';    
+import Doctors from './pages/Doctors';   
 import Navbar from './components/Navbar';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
